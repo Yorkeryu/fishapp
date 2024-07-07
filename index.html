@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <style>
       body{
-        background-image:url("bg.jpg");
+        background-image:url("imgs/bg.jpg");
         background-repeat:no-repeat;
         background-attachment: fixed; 
         background-size: cover;
@@ -26,7 +26,7 @@
       if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
         window.alert("警告：如果使用手机端显示此网页可能会导致背景图片出问题")
       }
-      if (!!window.ActiveXObject || "ActiveXObject" in window){
+      if (!!window.ActiveXObject || "ActiveXObject" in window||window.navigator.userAgent.indexOf("MSIE")>=1){
         while(true){
           window.alert("这IE谁爱适配谁适配去，老子不干！")
         }
